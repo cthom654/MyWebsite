@@ -63,6 +63,7 @@
         </div>
     </section>
     <section id="about">
+        
         <p class="section__text__p1">Get to Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -89,16 +90,19 @@
                     </div>
                 </div>
                 <div class="text-container"></div>
-                <p>
+                <p style="margin-bottom: 20px;">
                     I completed my degree in Computing Science in 2024, achieving 1st Class Honors
                     in my course. Finishing High School, I had the option of going to Liverpool to 
                     study Sports Science. However, I was unsure whether this was the path I wanted
-                    to commit myself to. I therefore decided to opt out and explore my different
+                    to commit myself to. 
+                <p style="margin-bottom: 20px;">
+                    I therefore decided to opt out and explore my different
                     interests. I initially took on barbering but after a year, felt 
                     unfulfilled by the trade. I then took time and decided that I would 
                     try my hands at computing.
-                        
-                    
+                <p>
+                    This decision has led me to something I enjoy. I have found a passion
+                    for technology and problem solving that I had not experienced before.               
                 </p>
             </div>
           </div>
@@ -109,7 +113,72 @@
           onclick="location.href='./#experience'"
           />  
         </section>
+
+    <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="slideshow-item" data-slideshow="1">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=800');"></div>
+                    <div class="project-overlay">
+                        <div class="project-title">Project One</div>
+                        <div class="project-subtitle">Web Development</div>
+                    </div>
+                    <div class="slide-indicator">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="slideshow-item" data-slideshow="2">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600132806608-231446b2e7af?w=800');"></div>
+                    <div class="project-overlay">
+                        <div class="project-title">Project Two</div>
+                        <div class="project-subtitle">UI/UX Design</div>
+                    </div>
+                    <div class="slide-indicator">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="slideshow-item" data-slideshow="3">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1557821552-17105176677c?w=800');"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800');"></div>
+                    <div class="project-overlay">
+                        <div class="project-title">Project Three</div>
+                        <div class="project-subtitle">Mobile Apps</div>
+                    </div>
+                    <div class="slide-indicator">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <img 
+            src="/assets/arrow.png" 
+            alt="Arrow Icon"
+            class="icon arrow" 
+            onclick="location.href='./#contact'"
+            style="margin-top: 3rem;"
+            />
+    </section>
+
                     <script src="script.js"></script>
+                    
 </body>
 
 </html>
