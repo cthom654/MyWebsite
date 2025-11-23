@@ -21,14 +21,6 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Cameron Thom</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -46,6 +38,7 @@
             <h1 class="title">Cameron Thom</h1>
             <p class="section__text__p2">IT Professional</p>
             <div class="btn-container">
+                
                 <button class="btn btn-color-2" onclick="window.open('./assets/myresume.pdf')">
                     Download Resume
                 </button>
@@ -53,6 +46,7 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info
                 </button>
+                
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
@@ -61,7 +55,13 @@
                     onclick="location.href='https://github.com/cthom654'">
             </div>
         </div>
-    </section>
+          <img src="./assets/arrow.png" 
+          alt="Arrow Icon"
+          class="icon arrow" 
+          onclick="location.href='./#about'"
+          />  
+    </section>                
+
     <section id="about">
         
         <p class="section__text__p1">Get to Know More</p>
@@ -107,20 +107,13 @@
             </div>
           </div>
           <img 
-          src="/assets/arrow.png" 
+          src="./assets/arrow.png" 
           alt="Arrow Icon"
           class="icon arrow" 
-          onclick="location.href='./#experience'"
+          onclick="location.href='./#projects'"
           />  
-    </section>
-            
-            <img 
-            src="/assets/arrow.png" 
-            alt="Arrow Icon"
-            class="icon arrow" 
-            onclick="location.href='./#contact'"
-            style="margin-top: 3rem;"
-            />
+    </section>  
+
 
 <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -145,7 +138,7 @@
                 <h3>OldSchool Runescape Drop Sim</h3>
                 <p>A simulation that gives the user a RNG drop based on monster chosen.</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('https://github.com/yourproject')">
+                    <button class="btn btn-color-2" onclick="window.open('https:github.com/cthom654/osrsOpening')">
                         GitHub
                     </button>
                     <button class="btn btn-color-2" onclick="window.open('https://yourproject.com')">
@@ -174,7 +167,7 @@
                 <h3>SquadUp</h3>
                 <p>A website, much like tinder, but for the gaming world. Match up with other players based on likes.</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('https://github.com/yourproject')">
+                    <button class="btn btn-color-2" onclick="window.open('https:github.com/cthom654/SquadUp')">
                         GitHub
                     </button>
                     <button class="btn btn-color-2" onclick="window.open('https://yourproject.com')">
@@ -214,7 +207,7 @@
         </div>
     </div>
     
-    <img src="/assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
          onclick="location.href='./#contact'" />
 </section>
                     <script src="script.js"></script>
