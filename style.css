@@ -5,19 +5,23 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
 }
 
 body {
     font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+h3{
+    color:white
+}
+
 p{
-    color: rgb(85, 85, 85)
+    color: rgb(218, 110, 9)
 }
 
 /* TRANSITION*/ 
@@ -46,7 +50,7 @@ nav{
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-decoration: white; 
 }
@@ -55,7 +59,7 @@ a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: rgb(255, 190, 116);
 }
 
 img[src="./assets/profile-pic.png"] { 
@@ -64,6 +68,7 @@ img[src="./assets/profile-pic.png"] {
 
 .logo{
     font-size: 2rem;
+    color: white;
 }
 
 .logo:hover{
@@ -86,7 +91,7 @@ img[src="./assets/profile-pic.png"] {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -167,6 +172,7 @@ section {
 
 .section__text__p1 {
     text-align: center;
+    color: white;
 }
 
 .section__text__p2 {
@@ -177,6 +183,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    color: white;
 }
 
 #socials-container {
@@ -221,16 +228,16 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(53, 53, 53);
+    background: rgb(112, 112, 112);
     color: white;
 }
 
 .btn-color-2 {
-    background: none;
+    background: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: rgb(241, 147, 23);
 
 }
 
