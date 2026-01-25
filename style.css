@@ -9,19 +9,36 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background-color: #fffcf4;
 }
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
 
 h3{
-    color:white
+    color:rgb(0, 0, 0)
 }
 
 p{
-    color: rgb(218, 110, 9)
+    color: rgb(0, 0, 0)
+}
+
+address {
+    color: rgb(255, 123, 0);
+}
+
+.email-address {
+    color: rgb(0, 0, 0);
+}
+
+.phone-number {
+    color:  rgb(255, 123, 0);
+}
+
+.linkedin_text {
+    color:  rgb(255, 123, 0);
 }
 
 /* TRANSITION*/ 
@@ -40,7 +57,12 @@ nav, .nav-links {
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    z-index: 1000;
 }
 
 .nav-links{
@@ -48,6 +70,7 @@ nav{
     list-style: none;   
     font-size: 1.5rem;
 }
+
 
 a {
     color: white;
@@ -62,8 +85,13 @@ a:hover {
     text-decoration-color: rgb(255, 190, 116);
 }
 
-img[src="./assets/profile-pic.png"] { 
+
+img[src="./assets/about-pic.png"] { 
     border-radius: 25%;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 100% 30%;
 }
 
 .logo{
@@ -71,62 +99,12 @@ img[src="./assets/profile-pic.png"] {
     color: white;
 }
 
-.logo:hover{
+.logo a:hover{
     cursor: default;
-}
-
-.menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0%;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transform: all 0.3 ease-in-out;
-}
-
-.menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
+    text-shadow: #aaaaac 0 0 15px; 
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
 }
 
-.menu-links li {
-    list-style: none;
-}
-
-.menu-links.open {
-    max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child{
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2){
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child{
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span :first-child{
-    transform: none;
-}
-
-.hamburger-icon span :first-child{
-    opacity: 0;
-}
-
-.hamburger-icon span :first-child{
-    transform: none;
-}
 
 
 /* SECTIONS */
@@ -149,7 +127,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 8rem;
     height: 80vh;
     position: relative;
 }
@@ -172,7 +150,7 @@ section {
 
 .section__text__p1 {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .section__text__p2 {
@@ -183,7 +161,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #socials-container {
@@ -306,6 +284,12 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+#experience {
+    min-height: 100vh;
+    position: relative;
+}
+
 .slideshow-container {
     position: relative;
     background-color: white;
@@ -386,4 +370,13 @@ section {
 
 .project-info .btn-container {
     background-color: white;
+}
+
+#contact {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

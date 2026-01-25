@@ -1,9 +1,4 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
+
 
 let slideIndexes = [0, 0, 0]; // One for each project
 
@@ -35,3 +30,12 @@ window.addEventListener('load', () => {
         showSlide(i);
     }
 });
+
+function copyEmail() {
+    navigator.clipboard.writeText('cthom654@gmail.com').then(() => {
+        // Optional: Show a brief message that it was copied
+        alert('Email copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}

@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camerons Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Cameron Thom</div>
+        <div 
+        class="logo"><a href="#profile">Cameron Thom</a>
+        </div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -21,17 +24,10 @@
             </ul>
         </div>
     </nav>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Cameron Thom profile picture">
+            <img src="./assets/about-pic.png" alt="Cameron Thom profile picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -68,7 +64,7 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile Picture" 
+                <img src="./assets/profile-pic.JPG" alt="Profile Picture" 
                 class="about-pic" 
                 />
             </div>
@@ -110,107 +106,137 @@
           src="./assets/arrow.png" 
           alt="Arrow Icon"
           class="icon arrow" 
-          onclick="location.href='./#projects'"
+          onclick="location.href='./#experience'"
           />  
     </section>  
 
-
-<section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="./assets/slide1main.jpg" alt="Project 1 - Image 1">
-                </div>
-                <div class="slide fade">
-                    <img src="./assets/slide1select.png" alt="Project 1 - Image 2">
-                </div>
-                <div class="slide fade">
-                    <img src="./assets/slide1cursor.png" alt="Project 1 - Image 3">
-                </div>
-                <a class="prev" onclick="changeSlide(-1, 0)">❮</a>
-                <a class="next" onclick="changeSlide(1, 0)">❯</a>
+    <section id="experience">
+        <p class="section__text__p1">My Personal</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3>MDN</h3>
+                <p>Mozilla Developer Network</p>
+                <p>Details about your role and responsibilities.</p>
             </div>
-            <div class="project-info">
-                <h3>OldSchool Runescape Drop Sim</h3>
-                <p>A simulation that gives the user a RNG drop based on monster chosen.</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('https://github.com/cthom654/osrsOpening')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" onclick="window.open('https://yourproject.com')">
-                        Live Demo
-                    </button>
+            <!-- Add more experience items as needed -->
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
+            onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="./assets/slide1main.jpg" alt="Project 1 - Image 1">
+                    </div>
+                    <div class="slide fade">
+                         <img src="./assets/slide1select.png" alt="Project 1 - Image 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./assets/slide1cursor.png" alt="Project 1 - Image 3">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1, 0)">❮</a>
+                    <a class="next" onclick="changeSlide(1, 0)">❯</a>
+                </div>
+                <div class="project-info">
+                    <h3>OldSchool Runescape Drop Sim</h3>
+                    <p>A simulation that gives the user a RNG drop based on monster chosen.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('https://github.com/cthom654/osrsOpening')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2" onclick="window.open('https://yourproject.com')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="./assets/login ss.png" alt="Project 2 - Image 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./assets/main ss.jpg" alt="Project 2 - Image 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./assets/games ss.jpg" alt="Project 2 - Image 3">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1, 1)">❮</a>
+                    <a class="next" onclick="changeSlide(1, 1)">❯</a>
+                </div>
+                <div class="project-info">
+                    <h3>SquadUp</h3>
+                    <p>A website, much like tinder, but for the gaming world. Match up with other players based on likes.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('https://github.com/cthom654/SquadUp')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2" onclick="window.open('https://yourproject.com')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="./assets/ttt1.png" alt="Project 3 - Image 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./assets/ttt2.png" alt="Project 3 - Image 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./assets/ttt3.png" alt="Project 3 - Image 3">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1, 2)">❮</a>
+                    <a class="next" onclick="changeSlide(1, 2)">❯</a>
+                </div>
+                <div class="project-info">
+                    <h3>TicTacToe (JS)</h3>
+                    <p>My first JavaScript project, TicTacToe, with personal customizations such as sounds and colours.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('https://github.com/cthom654/tictactoe')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2" onclick="window.open('https://tictactoe-eight-phi.vercel.app/')">
+                            Live Demo
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
+            onclick="location.href='./#contact'" />
+    </section>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="./assets/login ss.png" alt="Project 2 - Image 1">
-                </div>
-                <div class="slide fade">
-                    <img src="./assets/main ss.jpg" alt="Project 2 - Image 2">
-                </div>
-                <div class="slide fade">
-                    <img src="./assets/games ss.jpg" alt="Project 2 - Image 3">
-                </div>
-                <a class="prev" onclick="changeSlide(-1, 1)">❮</a>
-                <a class="next" onclick="changeSlide(1, 1)">❯</a>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <address>Email: 
+                    <span class="email-address" onclick="copyEmail()" style="cursor: pointer;">cthom654@gmail.com</span>
+                </address>
+                <p><span class="phone-number">Phone:</span> 07495820521</p>
+                <p><span class="linkedin_text">LinkedIn:</span> <a class="email-address" href="https://www.linkedin.com/in/cameron-thom-5922432b3/">Cameron Thom</a></p>
             </div>
-            <div class="project-info">
-                <h3>SquadUp</h3>
-                <p>A website, much like tinder, but for the gaming world. Match up with other players based on likes.</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('https://github.com/cthom654/SquadUp')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" onclick="window.open('https://yourproject.com')">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
+            <!-- You can add a contact form here if desired -->
         </div>
+    </section>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="./assets/ttt1.png" alt="Project 3 - Image 1">
-                </div>
-                <div class="slide fade">
-                    <img src="./assets/ttt2.png" alt="Project 3 - Image 2">
-                </div>
-                <div class="slide fade">
-                    <img src="./assets/ttt3.png" alt="Project 3 - Image 3">
-                </div>
-                <a class="prev" onclick="changeSlide(-1, 2)">❮</a>
-                <a class="next" onclick="changeSlide(1, 2)">❯</a>
-            </div>
-            <div class="project-info">
-                <h3>TicTacToe (JS)</h3>
-                <p>My first JavaScript project, TicTacToe, with personal customizations such as sounds and colours.</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('https://github.com/cthom654/tictactoe')">
-                        GitHub
-                    </button>
-                    <button class="btn btn-color-2" onclick="window.open('https://tictactoe-eight-phi.vercel.app/')">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
-         onclick="location.href='./#contact'" />
-</section>
-                    <script src="script.js"></script>
+ <script src="script.js"></script>
                     
 </body>
 
