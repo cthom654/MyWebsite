@@ -18,11 +18,11 @@ html{
 }
 
 h3{
-    color:rgb(0, 0, 0)
+    color: rgb(15, 15, 15)
 }
 
 p{
-    color: rgb(0, 0, 0)
+    color: rgb(15, 15, 15)
 }
 
 address {
@@ -30,7 +30,7 @@ address {
 }
 
 .email-address {
-    color: rgb(0, 0, 0);
+    color: rgb(15, 15, 15);
 }
 
 .phone-number {
@@ -100,8 +100,8 @@ img[src="./assets/about-pic.png"] {
 }
 
 .logo a:hover{
-    cursor: default;
-    text-shadow: #aaaaac 0 0 15px; 
+    cursor: pointer;
+    text-shadow: #ffdd7e 0 0 15px; 
     text-decoration: none;
 }
 
@@ -143,7 +143,7 @@ section {
     align-self: center;
     text-align: center;
     background-color:rgba(251, 255, 225, 0.26);
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid #ffffff66;
     box-shadow: 0 8px 32px rgba(0,0,0,0.08);
     border-radius: 20px;
     padding: 1.5rem;
@@ -156,7 +156,7 @@ section {
 
 .section__text__p1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(15, 15, 15);
 }
 
 .section__text__p2 {
@@ -167,7 +167,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(15, 15, 15);
 }
 
 #socials-container {
@@ -310,9 +310,18 @@ section {
     background-color:rgba(251, 255, 225, 0.26);
     border: 1px solid rgba(255,255,255,0.4);
     box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    border-radius: 20px;
+    border-radius: 20px 180px 20px 20px;
     padding: 1.5rem;
     overflow: hidden;
+    width: fit-content;
+}
+
+.experience-container.mimo-container {
+    border-radius: 180px 20px 20px 20px;
+    text-align: right;
+    background: #ffdd7e;
+    margin-left: auto;
+    margin-right: 0;
 }
 .slideshow-container {
     position: relative;
