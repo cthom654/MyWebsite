@@ -1,0 +1,106 @@
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-overlay.active {
+  display: flex;
+}
+
+/* Yellow container (outer border) */
+.modal-container {
+  position: relative;
+  background-color: #fffdf7;
+  border-radius: 40px;
+  padding: 40px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+/* Maroon content area */
+.modal-content {
+  background-color: #fffde18a;
+  color: #0f0f0f;
+  border-radius: 30px;
+  padding: 40px;
+  max-height: calc(80vh - 80px);
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #0f0f0f;
+}
+
+.modal-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #0f0f0f;
+}
+
+/* White X close button */
+.modal-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background-color: #f0f0f0;
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* Animation */
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Hover effects on clickable sections */
+.experience-section:hover,
+.education-section:hover,
+.hobbies-section:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.modal-title-icon {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  margin-right: 10px;
+}

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camerons Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/mediaqueries.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
+    <link rel="stylesheet" href="./CSS/projects.css">
 </head>
 
 <body>
@@ -71,41 +73,52 @@
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon" 
-                        class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>IT Technichian <br>Cookstown High School</p>
+                        <div class="experience-section">
+                            <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+                                <h3>Experience</h3>
+                                <p>IT Technichian <br>Cookstown High School</p>
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <div class="education-section">
+                            <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                                <h3>Education</h3>
+                                <p>Bacholers of Science Degree <br>in Computer Science</p>
+                        </div>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" 
-                        class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Bacholers of Science Degree <br>in Computer Science</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/hobbies.png" alt="Hobbies Icon" 
-                        class="icon"
-                        />
-                        <h3>Hobbies & Interests</h3>
-                        <p>Football & Sports<br>Music & Music Production<br>Gaming</p>
+                        <div class="hobbies-section">
+                            <img src="./assets/hobbies.png" alt="Hobbies Icon" class="icon"/>
+                                <h3>Hobbies & Interests</h3>
+                                <p>Football & Sports<br>Music & Music Production<br>Gaming</p>
+                        </div>
                     </div>
                 </div>
                 <div class="text-container"></div>
                 <p style="margin-bottom: 20px;">
-                    I completed my degree in Computing Science in 2024, achieving 1st Class Honors
-                    in my course. Finishing High School, I had the option of going to Liverpool to 
+                    I completed my Computing Science degree in 2024, achieving First Class Honours. 
+                    Since completing my degree, I have worked full time to save money while building projects on the side. 
+                    I initially found this challenging; however, at the start of 2026, I recalibrated 
+                    my focus and began spending most of my free time developing my craft. 
+                    By allowing myself to enjoy my projects rather than forcing progress, 
+                    I became more motivated and consistent. 
+                    I now look forward to improving my software development skills and working on projects I care about, 
+                    which gives me an enormous sense of wellbeing.
+                <p> Finishing High School, I had the option of going to Liverpool to 
                     study Sports Science. However, I was unsure whether this was the path I wanted
-                    to commit myself to. 
+                    to commit myself to. Although I had a passion for sports, I felt that the career was not challenging me in the the right way. 
+                    I wanted to be in a career that would push me and allow me to grow, and I did not feel that sports science would provide that.
+                </p>
                 <p style="margin-bottom: 20px;">
-                    I therefore decided to opt out and explore my different
-                    interests. I initially took on barbering but after a year, felt 
-                    unfulfilled by the trade. I then took time and decided that I would 
-                    try my hands at computing.
+                    I therefore decided to opt out and explore my different interests. I initially took on barbering but 
+                    after a year, felt unfulfilled by the trade. I then took time and decided that I would try my hands at 
+                    computing. I was immediately drawn to the logical thinking and creative problem-solving it required, and 
+                    it quickly became clear that this was an area where I felt motivated to grow and improve.
                 <p>
-                    This decision has led me to something I enjoy. I have found a passion
-                    for technology and problem solving that I had not experienced before.               
+                    This decision ultimately led me to something I truly enjoy. Through computing, I discovered a passion for 
+                    technology and problem-solving that I had not experienced before, and it continues to motivate me 
+                    to learn and grow, especially in the creative aspects of software development.             
                 </p>
             </div>
           </div>
@@ -258,8 +271,18 @@
         </div>
     </section>
 
- <script src="script.js"></script>
-                    
+    <!-- Modal HTML -->
+    <div id="modal-overlay">
+      <div class="modal-container">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+          <h2 id="modal-title"></h2>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+ <script src="script.js"></script>            
 </body>
 
 </html>
