@@ -136,7 +136,7 @@ section {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: 0;
+    margin-top: 50px;
 }
 
 .section__text {
