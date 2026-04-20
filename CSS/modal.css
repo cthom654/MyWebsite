@@ -31,9 +31,12 @@
 
 /* Maroon content area */
 .modal-content {
-  background-color: #fff7e0;
-  color: #0f0f0f;
-  border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 1);
   padding: 40px;
   max-height: calc(80vh - 80px);
   overflow-y: auto;
@@ -93,10 +96,12 @@
 .experience-section,
 .education-section,
 .hobbies-section {
-  background-color: #fffde18a;
-  border: 1px solid #ffffff66;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-  border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 1);
   padding: 1.5rem;
   transition: transform 0.3s ease;
 }

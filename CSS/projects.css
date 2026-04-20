@@ -18,12 +18,12 @@
 }
 
 .project-card {
-    background-color: rgba(251, 255, 225, 0.18);
-    border: 1.5px solid rgba(0, 0, 0, 0.12); /* stronger, darker border */
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.12),    /* deeper drop shadow for separation */
-        inset 0 1px 0 rgba(255,255,255,0.06); /* subtle inner highlight */
-    border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 1);
     padding: 1.5rem;
     overflow: hidden;
     width: 350px;
