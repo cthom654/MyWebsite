@@ -52,7 +52,7 @@ const modalData = {
     content: `
       <h4><strong>IT Technician</strong><br>
       Cookstown High School</h4>
-      <p>As an IT Technician, I support and maintain the school's technology infrastructure, including hardware and software issues, 
+      <p>As an IT Technician, I supported and maintained the school's technology infrastructure including hardware and software issues, 
       network connectivity, and user support.</p>
       <br>
       <h4>Maintenance</h4>
@@ -60,7 +60,7 @@ const modalData = {
       to replace faulty hardware and update drivers on computers).<br>
       <h4>Troubleshooting</h4>
       Additionally, I was required to troubleshoot technical problems such as maintaining network connectivity (e.g issues
-      with staff and students internet connectivity), updating software for applications for staff around the school to 
+      with staff and students internet connectivity) and updating software for applications for staff around the school to 
       ensure smooth operations (e.g I had to reset a staff member's account in order for them to set up parent meetings).<br>
       <h4>Additional Support</h4>
       Furthermore, I went outside if my initail duties and I assisted staff and students with their IT needs (e.g I conducted an 
@@ -92,7 +92,7 @@ const modalData = {
       <h4>Football & Sports</h4>
       <p>I have had a passion for football and other sports since a very young age. I enjoy training and playing football 
       every week, I also enjoy watching matches and support Chelsea FC! I find that playing sports is the best way for me
-      to stay fit as I enjoy it, relieve stress, and connect with others.</p>
+      to stay fit as I enjoy exercise, relieve stress, and connect with others.</p>
       <h4>Music & Music Production</h4>
       <p>I enjoy creating music and producing tracks. I use various software tools to compose and edit music, 
       which allows me to express my creativity and explore the broad musical styles that I listen to and combine them.</p>
